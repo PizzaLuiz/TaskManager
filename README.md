@@ -6,4 +6,4 @@ Projeto para gerenciar tarefas,  aplicação permite que você cria tarefas, com
 #### Criar Rotas
 - Buscar Task por id
 - Completar Task (Rota que muda o status de uma task por id)
-- Excluir Task
+- Excluir Task -> Renan
