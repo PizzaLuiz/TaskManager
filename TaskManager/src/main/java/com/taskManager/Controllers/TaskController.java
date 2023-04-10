@@ -2,6 +2,7 @@ package com.taskManager.Controllers;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 
 import com.taskManager.Task;
@@ -31,7 +32,12 @@ public class TaskController {
 	}
 
 	@DeleteMapping("/task/{id}")
-	public void deleteTask(@PathVariable Long id){
+	public void deleteTaskID(@PathVariable Long id){
 		repository.deleteById(id);
+	}
+
+	@DeleteMapping("/task")
+	public void deleteallTask(){
+		repository.deleteAll();
 	}
 }
