@@ -12,8 +12,8 @@ Projeto para gerenciar tarefas,  aplicação permite que você cria tarefas, com
 ### Criar Front (Richard)
 
 ### Criar Rotas
-- Buscar Task por id
+- Buscar Task por id -> Feito
 - Trocar status da Task por id
 - Editar titulo da Task
-- Excluir Task -> Renan
+- Excluir Task -> Feito
 
