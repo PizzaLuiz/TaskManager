@@ -1,4 +1,5 @@
 package com.taskManager.Controllers;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.List;
 
@@ -12,6 +13,7 @@ import lombok.AllArgsConstructor;
 
 @RestController
 @AllArgsConstructor
+@CrossOrigin(origins = "http://127.0.0.1:5500")
 public class TaskController {
 	
 	TaskRepository repository;
@@ -29,6 +31,15 @@ public class TaskController {
 	@PostMapping("/task")
 	public Task saveTask(@RequestBody Task task) {
 		return repository.save(task);
+	}
+	
+	@PutMapping("/task/{id}")
+	public Task updateTask(@PathVariable Long id, @RequestBody Task updatedTask) {
+	    Task task = repository.findById(id).orElseThrow(() -> new IllegalArgumentException("Tarefa não encontrada: " + id));
+
+	    task.setStatus(updatedTask.getStatus());
+
+	    return repository.save(task);
 	}
 
 	@DeleteMapping("/task/{id}")
