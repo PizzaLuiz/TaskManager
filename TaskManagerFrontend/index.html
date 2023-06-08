@@ -17,12 +17,12 @@
 
     <main>
 
-        <form class="add-form">
+        <form class="add-form" id="task-form">
             <input type="text" placeholder="Adicionar tarefas" class="input-task">
             <button type="submit">+</button>
         </form>
 
-        <table>
+        <table id="task-table">
 
             <thead>
                 <tr>
@@ -33,28 +33,7 @@
             </thead>
 
             <tbody>
-                <tr>
-                    <td>Titulo da Task</td>
-                    <td>
-                        <select>
-                            <option value="pendente">pendente</option>
-                            <option value="em andamento">em andamento</option>
-                            <option value="concluida">Concluída</option>
-                        </select>
-                    </td>
-                    <td>
-                        <button class="btn-action">
-                            <span class="material-symbols-outlined">
-                                edit
-                            </span>
-                        </button>
-                        <button class="btn-action">
-                            <span class="material-symbols-outlined">
-                                delete
-                            </span>
-                        </button>
-                    </td>
-                </tr>
+                
             </tbody>
 
         </table>
