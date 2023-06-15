@@ -11,3 +11,9 @@ Projeto para gerenciar tarefas,  aplicação permite que você crie tarefas, mud
 - Excluir Task: DELETE http://localhost:8080/task/{id}
 - Excluir todas as tasks :DELETE http://localhost:8080/task
 
+## Properties
+spring.datasource.url=jdbc:mysql://localhost:3306/NomeDoSchema
+spring.datasource.username=
+spring.datasource.password=
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
