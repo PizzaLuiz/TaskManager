@@ -2,6 +2,10 @@
 
 Projeto para gerenciar tarefas,  aplicação permite que você crie tarefas, mude o status e exclua.
 
+
+Feito por: João Luiz, Oscar André, Renan Prazeres e Richard de Souza
+
+
 ## Rotas
 
 - Salvar Task: POST http://localhost:8080/task
